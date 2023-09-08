@@ -1,0 +1,201 @@
+//App.js
+.App {
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+//Header
+.smaller img {
+  width: 17px;
+}
+.nav-logo {
+  width: 25%;
+}
+.navbar {
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold !important;
+  font-size: 22px !important;
+}
+
+.headerSizing {
+  margin-top: 20px;
+  color: white;
+}
+
+.headerContainer {
+  height: 75px;
+  border-radius: 25px;
+  padding: 20px;
+  width: 200px;
+  height: 60px;
+  box-shadow: 6px 6px 24px 0 rgba(0, 0, 0, 0.08);
+}
+////////////////
+
+//Homepage
+.container {
+  max-width: 85% !important;
+}
+//Section1
+.topHeader {
+  margin-bottom: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+  border-color: #c0c0c0;
+}
+.firstHeader {
+  font-weight: bold !important;
+  font-size: 70px !important;
+}
+
+.topheaderContainer {
+  height: 20px;
+}
+
+.btn2 {
+  text-decoration: none !important;
+  border: none !important;
+  white-space: nowrap;
+  margin-left: 10px;
+  width: 150px;
+  padding: 1px 15px 1px 15px !important;
+  width: 150px;
+  background-color: #f1e9e9 !important;
+}
+.bt2a {
+  color: black !important;
+  text-decoration: none;
+  padding: auto;
+}
+//section2
+.homepageNurseColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepageNurse {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.threeReasonRowPadding,
+.padding {
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 30px;
+  padding-bottom: 55px;
+  margin-top: 50px;
+}
+
+.threeReasonRowPadding {
+}
+// extra benefits
+
+.extraBenefits {
+  padding: 30px;
+}
+.extraBenefitsRow {
+  height: 430px;
+}
+
+.lastSection {
+  border-radius: 15px 50px 30px;
+  background: #8eaadd;
+  width: 200px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 80px;
+  height: 229px;
+}
+
+////////////////////
+
+//ABOUT US PAGE
+.tiredPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons {
+  text-align: center;
+}
+
+.mainParentFooter {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.grpPhoto {
+  border-radius: 15px 50px 30px;
+  background: #73ad21;
+  padding: 20px;
+  width: auto;
+  height: 400px;
+}
+
+.prblms{
+  border-radius: 15px 50px 30px;
+  background: #73ad21;
+  padding: 20px;
+  width: auto;
+  height: 400px;
+}
+///////////////////
+// Services
+.values
+{
+  border-radius: 15px 50px !important;
+  
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+///////////////////
+//FOOTER
+.parentFooterLinks {
+  display: flex;
+  text-align: center;
+}
+.footerLinks {
+  text-decoration: none;
+  flex-grow: 3;
+  color: black;
+}
+.footerMargin {
+  padding: 20px 0px 0px;
+  height: 210px;
+  margin-top: 40px;
+}
+
+.Footer {
+  margin-top: auto;
+}
+
+html {
+  height: 100%;
+}
+
+.copyright {
+  display: inline-flex;
+  font-size: smaller;
+  justify-content: center;
+  width: 1053px !important;
+}
+.parentFooter2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+.footerIcon{
+  width: "32px";
+  height: "32px"
+}
