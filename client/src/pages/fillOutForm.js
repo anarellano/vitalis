@@ -95,7 +95,7 @@ function FillOutForm() {
     state: Yup.string().required(
       <span style={{ color: 'red' }}>State is required</span>
     ),
-    zipCode: Yup.string().required(
+    zipCode: Yup.number().required(
       <span style={{ color: 'red' }}>Zip code is required</span>
     ),
   });

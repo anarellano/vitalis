@@ -1,8 +1,16 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
 
-router.get('/users', (req, res) => {
+// Define a route to handle the form submission
+router.post('/api/submit-form', (req, res) => {
+  // Access the form data from the request body
+  const formData = req.body;
 
-})
+  // Perform any necessary processing or validation on the formData
+  // Then, send a response
+  res.json({ message: 'Form submitted successfully' });
+});
 
-module.exports = router
+// Define other routes as needed
+
+module.exports = router;
