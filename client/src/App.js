@@ -14,6 +14,7 @@ import LVN from "./pages/lvn";
 import NurseTalent from "./pages/nurseTalent";
 import FillOutForm from "./pages/fillOutForm";
 import FreeEducation from "./pages/freeEducation";
+import Rows from "./pages/rows";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
           <Route path="/RN" element={<RN />} />
           <Route path="/FillOutForm" element={<FillOutForm />} />
           <Route path="/FreeEducation" element={<FreeEducation />} />
+          <Route path="/rows" element={<Rows />} />
+
         </Routes>
         <Footer />
       </Router>
