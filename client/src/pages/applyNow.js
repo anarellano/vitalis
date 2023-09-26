@@ -11,7 +11,7 @@ function ApplyNow() {
           <Input type="select" name="select" id="exampleSelect">
             <option>Certified Nursing Assistant (CNA)</option>
             <option>Licensed Vocational Nurse (LVN/LPN)</option>
-            <option>Registered Nurse (RN)</option>
+            <option>Registered Nu rse (RN)</option>
           </Input>
         </FormGroup>
         <h2>Personal Information</h2>
