@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import facebook from '/Users/antonarellano/Vitalis/client/src/images/images/icon/facebook.png';
-import google from '/Users/antonarellano/Vitalis/client/src/images/images/icon/google.png';
-import linkedin from '/Users/antonarellano/Vitalis/client/src/images/images/icon/linkedin.png';
+import facebook from '../images/images/icon/facebook.png';
+import google from  '../images/images/icon/google.png';
+import linkedin from '../images/images/icon/linkedin.png';
 
 export default function Footer() {
   return (

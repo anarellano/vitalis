@@ -13,7 +13,7 @@ import {
   Input,
 } from "reactstrap";
 
-import TestimonialSlider from "/Users/antonarellano/Vitalis/client/src/components/testimonialSlider";
+import TestimonialSlider from "../components/testimonialSlider";
 
 function Services() {
   return (

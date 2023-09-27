@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, FormGroup, Input, Container, Col, Button } from "reactstrap";
-import FileUpload from "/Users/antonarellano/Vitalis/client/src/components/fileUpload";
+import FileUpload from "../components/fileUpload";
 
 function ApplyNow() {
   return (

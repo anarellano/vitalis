@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import { Card, Container, Row, Col } from "react-bootstrap";
 
-import Faq from "/Users/antonarellano/Vitalis/client/src/components/faq.js";
-import TestimonialSlider from "/Users/antonarellano/Vitalis/client/src/components/testimonialSlider.js";
-import BottomBox from '/Users/antonarellano/Vitalis/client/src/components/bottomBox.js';
-
-import timetable from "/Users/antonarellano/Vitalis/client/src/images/images/timetable.png";
-import money from "/Users/antonarellano/Vitalis/client/src/images/images/money.png";
-import trophy from "/Users/antonarellano/Vitalis/client/src/images/images/trophy.png";
-import medium from "/Users/antonarellano/Vitalis/client/src/images/images/medium.png";
+import Faq from "../components/faq.js";
+import TestimonialSlider from "../components/testimonialSlider.js";
+import BottomBox from '../components/bottomBox.js';
+import timetable from "../images/images/timetable.png";
+import money from "../images/images/money.png";
+import trophy from "../images/images/trophy.png";
+import medium from "../images/images/medium.png";
 // import ApplyNow from "./ApplyNow";
 
 

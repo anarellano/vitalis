@@ -3,7 +3,7 @@ import { Carousel, Container, Row, Col } from "react-bootstrap";
 import { faStar, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import testimonials from "/Users/antonarellano/Vitalis/client/src/components/testimonials.jsx";
+import testimonials from "../components/testimonials.jsx";
 
 function TestimonialSlider() {
   return (

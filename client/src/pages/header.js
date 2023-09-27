@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import Sticky from "react-stickynode";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
-import logo from "/Users/antonarellano/Vitalis/client/src/images/images/logo.png"; // Replace path_to_logo with the correct path
+import logo from "../images/images/logo.png"; // Replace path_to_logo with the correct path
 
-import ApplyNow from "/Users/antonarellano/Vitalis/client/src/pages/applyNow.js"; // Replace path_to_ApplyNow with the correct path
+// import ApplyNow from "/Users/antonarellano/Vitalis/client/src/pages/applyNow.js"; // Replace path_to_ApplyNow with the correct path
 
 export default function Header() {
   return (

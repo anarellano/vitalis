@@ -12,8 +12,8 @@ import {
   Form,
   FormGroup,
 } from "reactstrap";
-import BottomBox from "/Users/antonarellano/Vitalis/client/src/components/bottomBox.js";
-import TestimonialSlider from "/Users/antonarellano/Vitalis/client/src/components/testimonialSlider.js";
+import BottomBox from "../components/bottomBox.js";
+import TestimonialSlider from "../components/testimonialSlider.js";
 
 function Jobs() {
   return (

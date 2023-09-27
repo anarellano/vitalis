@@ -11,7 +11,7 @@ import {
   CardSubtitle,
   CardText,
 } from "reactstrap";
-import BottomBox from "/Users/antonarellano/Vitalis/client/src/components/bottomBox.js";
+import BottomBox from "../components/bottomBox";
 
 
 export default function AboutUs(props) {
