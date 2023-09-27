@@ -14,6 +14,7 @@ import LVN from "./pages/lvn";
 import NurseTalent from "./pages/nurseTalent";
 import FillOutForm from "./pages/fillOutForm";
 import FreeEducation from "./pages/freeEducation";
+import MedicalConcierge from "./pages/MedicalConcierge";
 // 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/RN" element={<RN />} />
           <Route path="/FillOutForm" element={<FillOutForm />} />
           <Route path="/FreeEducation" element={<FreeEducation />} />
+          <Route path="/MedicalConcierge" element={<MedicalConcierge />} />
           
 
         </Routes>

@@ -11,6 +11,7 @@ import money from "../images/images/money.png";
 import trophy from "../images/images/trophy.png";
 import medium from "../images/images/medium.png";
 // import ApplyNow from "./ApplyNow";
+import firstPicture from "../images/images/firstPicture.jpg" 
 
 
 function Homepage() {
@@ -71,8 +72,8 @@ function Homepage() {
       {/* Section 2: Cater to Audience/nurse beneifits */}
       <Container className="threeReasonRowPadding my-5">
         <Row>
-          <Col className="prblms">image of us helping</Col>
-          <Col>
+          <Col><img className="prblms" src={firstPicture}  alt="Description"/></Col>
+          <Col className="d-flex flex-column">
             <Card.Body className="threeReasonRow">
               <Card.Title>
                 <img src={timetable} />
@@ -90,7 +91,7 @@ function Homepage() {
                 Competitive Rates
               </Card.Title>
               <Card.Text>
-                "Join our nursing team and earn up to 29% more than the average
+                "Earn up to 29% more than the average
                 hourly wage in the Bay Area!"
               </Card.Text>
             </Card.Body>

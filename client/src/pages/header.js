@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Sticky from "react-stickynode";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Dropdown } from "react-bootstrap";
 
 import logo from "../images/images/logo.png"; // Replace path_to_logo with the correct path
 
@@ -24,9 +24,19 @@ export default function Header() {
                 <Nav.Link className="text-nowrap bold" as={Link} to="/aboutUs">
                   About Us
                 </Nav.Link>
-                <Nav.Link className="text-nowrap bold" as={Link} to="/Services">
+                {/* <Nav.Link className="text-nowrap bold" as={Link} to="/Services">
                   Services
-                </Nav.Link>
+                </Nav.Link> */}
+                <Dropdown>
+      <Dropdown.Toggle   variant="link"  className="text-nowrap bold custom-dropdown">
+        Services
+      </Dropdown.Toggle>
+      
+      <Dropdown.Menu>
+        <Dropdown.Item as={Link} to="/Services">Staffing</Dropdown.Item>
+        <Dropdown.Item as={Link} to="/MedicalConcierge">Medical Concierge</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
                 <Nav.Link className="text-nowrap bold" as={Link} to="/jobs">
                   Jobs
                 </Nav.Link>

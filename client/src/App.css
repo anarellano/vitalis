@@ -1,11 +1,11 @@
-//App.js
+/* //App.js */
 .App {
   min-height: 100vh !important;
   display: flex !important;
   flex-direction: column !important;
 }
 
-//Header
+/* //Header */
 .smaller img {
   width: 17px;
 }
@@ -34,13 +34,13 @@
   height: 60px;
   box-shadow: 6px 6px 24px 0 rgba(0, 0, 0, 0.08);
 }
-////////////////
+/* //////////////// */
 
-//Homepage
+/* //Homepage */
 .container {
   max-width: 85% !important;
 }
-//Section1
+/* //Section1 */
 .topHeader {
   margin-bottom: 0px;
   border-bottom-style: solid;
@@ -71,7 +71,7 @@
   text-decoration: none;
   padding: auto;
 }
-//section2
+/* //section2 */
 .homepageNurseColumn {
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@
 
 .threeReasonRowPadding {
 }
-// extra benefits
+/* // extra benefits // */
 
 .extraBenefits {
   padding: 30px;
@@ -113,9 +113,16 @@
   height: 229px;
 }
 
-////////////////////
+/* section 3 */
+.custom-dropdown {
+  color: #0c0c0c; /* Or any color you prefer */
+  text-decoration: none;
+}
 
-//ABOUT US PAGE
+
+/* //////////////////// */
+
+/* //ABOUT US PAGE */
 .tiredPic {
   display: block;
   margin-left: auto;
@@ -142,12 +149,11 @@
 .prblms{
   border-radius: 15px 50px 30px;
   background: #73ad21;
-  padding: 20px;
   width: auto;
   height: 400px;
+  width:fit-content
 }
-///////////////////
-// Services
+/* //////////////////// Services */
 .values
 {
   border-radius: 15px 50px !important;
@@ -157,8 +163,8 @@
   height: 150px;
 }
 
-///////////////////
-//FOOTER
+/* /////////////////// */
+FOOTER
 .parentFooterLinks {
   display: flex;
   text-align: center;
