@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Homepage from "./pages/homepage";
-import Header from "./pages/header";
-import Footer from "./pages/footer";
+import Homepage from "./pages/Homepage";
+import Header from "./pages/Header";
+import Footer from "./pages/Footer";
 import AboutUs from "./pages/aboutUs";
 import Jobs from "./pages/jobs";
 import Services from "./pages/services";
@@ -15,7 +15,7 @@ import NurseTalent from "./pages/nurseTalent";
 import FillOutForm from "./pages/fillOutForm";
 import FreeEducation from "./pages/freeEducation";
 import MedicalConcierge from "./pages/MedicalConcierge";
-// 
+//
 
 function App() {
   return (
@@ -35,8 +35,6 @@ function App() {
           <Route path="/FillOutForm" element={<FillOutForm />} />
           <Route path="/FreeEducation" element={<FreeEducation />} />
           <Route path="/MedicalConcierge" element={<MedicalConcierge />} />
-          
-
         </Routes>
         <Footer />
       </Router>

@@ -1,24 +1,12 @@
 import React from "react";
 import { Container, Button } from "reactstrap";
+import ApplyNowButton from "./ApplyNowButton";
 
 function BottomBox() {
   return (
-    <Container
-    
-      className="mt-5 lastSection"
-    >
-      <h3>Be part of the Vitalis Family!</h3>
-      <Button
-        color="primary"
-        size="lg"
-        href="https://forms.gle/qxkT7C2V9z9Kz3RV8"
-        style={{
-          fontWeight: "bold",
-          color: "white",
-        }}
-      >
-        Apply Now!
-      </Button>
+    <Container className="mt-5 lastSection">
+      <h1>Be part of the Vitalis Family!</h1>
+      <ApplyNowButton />
     </Container>
   );
 }

@@ -67,10 +67,21 @@
   background-color: #f1e9e9 !important;
 }
 .bt2a {
-  color: black !important;
-  text-decoration: none;
-  padding: auto;
+  
+    width: 150px;
+    text-align: center;
+    color: white,
+    
+  }
+
+  .apply-now-btn {
+    width: 150px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
 }
+
+
 /* //section2 */
 .homepageNurseColumn {
   display: flex;
@@ -105,12 +116,12 @@
 
 .lastSection {
   border-radius: 15px 50px 30px;
-  background: #8eaadd;
+  background: #aed2ea;
   width: 200px;
   text-align: center;
   padding-bottom: 50px;
   padding-top: 80px;
-  height: 229px;
+  height: 300px;
 }
 
 /* section 3 */

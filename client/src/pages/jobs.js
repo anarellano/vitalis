@@ -12,7 +12,7 @@ import {
   Form,
   FormGroup,
 } from "reactstrap";
-import BottomBox from "../components/bottomBox.js";
+import BottomBox from "../components/BottomBox.js";
 import TestimonialSlider from "../components/testimonialSlider.js";
 
 function Jobs() {

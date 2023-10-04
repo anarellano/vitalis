@@ -11,7 +11,7 @@ import {
   CardSubtitle,
   CardText,
 } from "reactstrap";
-import BottomBox from "../components/bottomBox";
+import BottomBox from "../components/BottomBox";
 
 
 export default function AboutUs(props) {
