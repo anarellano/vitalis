@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/vitalis/static/css/main.fc9c59bd.css",
-    "main.js": "/vitalis/static/js/main.2eb4a98b.js",
-    "static/media/firstPicture.jpg": "/vitalis/static/media/firstPicture.47a4d56c0d31a2b795ec.jpg",
-    "static/media/logo.png": "/vitalis/static/media/logo.b87c7ac537d0a45d43e1.png",
-    "static/media/medium.png": "/vitalis/static/media/medium.06f77f15d307a069cfdd.png",
-    "index.html": "/vitalis/index.html",
-    "main.fc9c59bd.css.map": "/vitalis/static/css/main.fc9c59bd.css.map",
-    "main.2eb4a98b.js.map": "/vitalis/static/js/main.2eb4a98b.js.map"
+    "main.css": "/static/css/main.fc9c59bd.css",
+    "main.js": "/static/js/main.f376ceb8.js",
+    "static/media/firstPicture.jpg": "/static/media/firstPicture.47a4d56c0d31a2b795ec.jpg",
+    "static/media/logo.png": "/static/media/logo.b87c7ac537d0a45d43e1.png",
+    "static/media/medium.png": "/static/media/medium.06f77f15d307a069cfdd.png",
+    "index.html": "/index.html",
+    "main.fc9c59bd.css.map": "/static/css/main.fc9c59bd.css.map",
+    "main.f376ceb8.js.map": "/static/js/main.f376ceb8.js.map"
   },
   "entrypoints": [
     "static/css/main.fc9c59bd.css",
-    "static/js/main.2eb4a98b.js"
+    "static/js/main.f376ceb8.js"
   ]
 }
