@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc9c59bd.css",
-    "main.js": "/static/js/main.f376ceb8.js",
+    "main.css": "/static/css/main.74c5713a.css",
+    "main.js": "/static/js/main.e3603a6e.js",
+    "static/media/hiringNursesOne.jpg": "/static/media/hiringNursesOne.6ddb96feed55a6efb4f1.jpg",
+    "static/media/hiring.jpg": "/static/media/hiring.5fbf3a4e5285ef0fb815.jpg",
+    "static/media/hiringNurses.jpg": "/static/media/hiringNurses.37dedc1c734e7d4ce789.jpg",
+    "static/media/nurseArmy.jpg": "/static/media/nurseArmy.3f438313d3bb38b38b83.jpg",
     "static/media/firstPicture.jpg": "/static/media/firstPicture.47a4d56c0d31a2b795ec.jpg",
     "static/media/logo.png": "/static/media/logo.b87c7ac537d0a45d43e1.png",
     "static/media/medium.png": "/static/media/medium.06f77f15d307a069cfdd.png",
     "index.html": "/index.html",
-    "main.fc9c59bd.css.map": "/static/css/main.fc9c59bd.css.map",
-    "main.f376ceb8.js.map": "/static/js/main.f376ceb8.js.map"
+    "main.74c5713a.css.map": "/static/css/main.74c5713a.css.map",
+    "main.e3603a6e.js.map": "/static/js/main.e3603a6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc9c59bd.css",
-    "static/js/main.f376ceb8.js"
+    "static/css/main.74c5713a.css",
+    "static/js/main.e3603a6e.js"
   ]
 }

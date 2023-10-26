@@ -25,4 +25,4 @@ const ApplyNowButton = () => {
 }
 
 export default ApplyNowButton;
-``
+
