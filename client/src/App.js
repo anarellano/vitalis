@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Homepage from "./pages/homepage";
-import Header from "./pages/header";
-import Footer from "./pages/footer";
-import AboutUs from "./pages/aboutUs";
+import Homepage from "./pages/Homepage";
+import Header from "./pages/Header";
+import Footer from "./pages/Footer";
+import AboutUs from "./pages/AboutUs";
 import Jobs from "./pages/jobs";
-import Services from "./pages/services";
+import Staffing from "./pages/Staffing";
 import ApplyNow from "./pages/applyNow";
 import CNA from "./pages/cna";
 import RN from "./pages/rn";
@@ -15,7 +15,21 @@ import NurseTalent from "./pages/nurseTalent";
 import FillOutForm from "./pages/fillOutForm";
 import FreeEducation from "./pages/freeEducation";
 import MedicalConcierge from "./pages/MedicalConcierge";
-// 
+//
+const websiteRoutes = [
+  { path: "/", component: Homepage },
+  { path: "/aboutUs", component: AboutUs },
+  { path: "/jobs", component: Jobs },
+  { path: "/Staffing", component: Staffing },
+  { path: "/applyNow", component: ApplyNow },
+  { path: "/CNA", component: CNA },
+  { path: "/LVN", component: LVN },
+  { path: "/NurseTalent", component: NurseTalent },
+  { path: "/RN", component: RN },
+  { path: "/FillOutForm", component: FillOutForm },
+  { path: "/FreeEducation", component: FreeEducation },
+  { path: "/MedicalConcierge", component: MedicalConcierge },
+];
 
 function App() {
   return (
@@ -23,20 +37,9 @@ function App() {
       <Router>
         <Header />
         <Routes className="Routes">
-          <Route path="/" element={<Homepage />} />
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/jobs" element={<Jobs />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/ApplyNow" element={<ApplyNow />} />
-          <Route path="/CNA" element={<CNA />} />
-          <Route path="/LVN" element={<LVN />} />
-          <Route path="/NurseTalent" element={<NurseTalent />} />
-          <Route path="/RN" element={<RN />} />
-          <Route path="/FillOutForm" element={<FillOutForm />} />
-          <Route path="/FreeEducation" element={<FreeEducation />} />
-          <Route path="/MedicalConcierge" element={<MedicalConcierge />} />
-          
-
+          {websiteRoutes.map((route) => (
+            <Route key={route.path} path={route.path} element={<route.component />} />
+          ))}
         </Routes>
         <Footer />
       </Router>

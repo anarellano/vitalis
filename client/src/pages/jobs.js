@@ -12,7 +12,8 @@ import {
   Form,
   FormGroup,
 } from "reactstrap";
-import BottomBox from "../components/bottomBox.js";
+import ApplyNowButton from "../components/ApplyNowButton.js";
+import BottomBox from "../components/BottomBox.js";
 import TestimonialSlider from "../components/testimonialSlider.js";
 
 function Jobs() {
@@ -27,7 +28,7 @@ function Jobs() {
             patient care. Join our team of skilled nurses and make a difference
             in people's lives.
           </p>
-          <Button>Apply Now</Button>
+          <ApplyNowButton />
         </Col>
         <Col className="prblms me-5">image of us helping</Col>
       </Container>

@@ -11,8 +11,10 @@ import {
   CardSubtitle,
   CardText,
 } from "reactstrap";
-import BottomBox from "../components/bottomBox";
-
+import ApplyNowButton from "../components/ApplyNowButton";
+import BottomBox from "../components/BottomBox";
+import EmployeeCard from "../components/EmployeeCard";
+import PhoneNumberButton from "../components/PhoneNumberButton";
 
 export default function AboutUs(props) {
   return (
@@ -34,23 +36,8 @@ export default function AboutUs(props) {
             health insurance, and more!"
           </p>
           <section>
-            <Button
-              className="rounded-pill"
-              color="primary"
-              size="large"
-              style={{ width: "176px", height: "44px" }}
-            >
-              Large
-            </Button>
-            <Button
-              className="rounded-pill btn2"
-              size="large"
-              style={{ width: "176px", height: "44px" }}
-            >
-              <a className="bt2a" href="tel:+1-415-812-4343">
-                (415) 812-4343
-              </a>
-            </Button>
+            <ApplyNowButton />
+            <PhoneNumberButton />
           </section>
         </Row>
       </Container>
@@ -137,99 +124,23 @@ export default function AboutUs(props) {
       <Container>
         <h2>Meet Our Team</h2>
         <Row xs="1" sm="2" md="4" className="g-4">
-          <Col>
-            <Card className="cardBodySize">
-              {/* <CardImg
-                  top
-                  width="100%"
-                  src="/images/team-member1.jpg"
-                  alt="Team Member"
-                /> */}
-              <CardBody>
-                <CardTitle tag="h5">Justine Acuña</CardTitle>
-                <CardSubtitle tag="h6" className="mb-2 text-muted">
-                  CEO
-                </CardSubtitle>
-                <CardText className="cardBodySize">
-                  Justine Acuna, the CEO of VitaliStaffing, has fulfilled her
-                  passion for equality and care by opening her own nursing
-                  agency. With Justine at the helm, VitaliStaffing embodies a
-                  commitment to exceptional healthcare and a nurturing
-                  environment that sets it apart in the industry.
-                </CardText>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="cardBodySize">
-              {/* <CardImg
-                  top
-                  width="100%"
-                  src="/images/team-member2.jpg"
-                  alt="Team Member"
-                /> */}
-              <CardBody>
-                <CardTitle tag="h5">Raquel Heck</CardTitle>
-                <CardSubtitle tag="h6" className="mb-2 text-muted">
-                  COO
-                </CardSubtitle>
-                <CardText className="cardBodySize">
-                  Raquel Heck, COO of the organization, is the driving force
-                  behind the seamless operations and team success at
-                  VitaliStaffing. With her exceptional leadership, she ensures
-                  that every aspect runs smoothly, paving the way for the
-                  agency's continued excellence.
-                </CardText>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="cardBodySize">
-              {/* <CardImg
-                  top
-                  width="100%"
-                  src="/images/team-member3.jpg"
-                  alt="Team Member"
-                /> */}
-              <CardBody>
-                <CardTitle tag="h5">Elizabeth Beljica</CardTitle>
-                <CardSubtitle tag="h6" className="mb-2 text-muted">
-                  Operations Manager
-                </CardSubtitle>
-                <CardText className="cardBodySize">
-                  Elizabeth Belgica, highly collaborative Operating Manager,
-                  excels at working closely with both the nursing staff and all
-                  other team members. Through her effective communication, she
-                  fosters a harmonious work environment that maximizes
-                  productivity and overall success.
-                </CardText>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="cardBodySize">
-              {/* <CardImg
-                  top
-                  width="100%"
-                  src="/images/team-member4.jpg"
-                  alt="Team Member"
-                /> */}
-              <CardBody>
-                <CardTitle tag="h5">Anton Arellano</CardTitle>
-                <CardSubtitle tag="h6" className="mb-2 text-muted">
-                  Financial Analyst
-                </CardSubtitle>
-                <CardText className="cardBodySize">
-                  Anton Arellano, our adept Financial Analyst, is an integral
-                  part of VitaliStaffing, providing essential updates on
-                  payroll, profits, and cost-cutting strategies. His expertise
-                  enables us to make informed decisions that optimize our
-                  financial performance and drive growth, ensuring a prosperous
-                  future for our organization.
-                </CardText>
-              </CardBody>
-            </Card>
-          </Col>
+          <EmployeeCard
+            name="Justine Acuña"
+            role="CEO"
+            description="Justine Acuna, the CEO of VitaliStaffing, has fulfilled her passion for equality and care by opening her own nursing agency. With Justine at the helm, VitaliStaffing embodies a commitment to exceptional healthcare and a nurturing environment that sets it apart in the industry."
+          />
+
+          <EmployeeCard
+            name="Raquel Heck"
+            role="COO"
+            description="Raquel Heck, COO of the organization, is the driving force behind the seamless operations and team success at VitaliStaffing. With her exceptional leadership, she ensures that every aspect runs smoothly, paving the way for the agency's continued excellence."
+          />
+
+          <EmployeeCard
+            name="Anton Arellano"
+            role="Financial Analyst"
+            description="Anton Arellano, our adept Financial Analyst, is an integral part of VitaliStaffing, providing essential updates on payroll, profits, and cost-cutting strategies. His expertise enables us to make informed decisions that optimize our financial performance and drive growth, ensuring a prosperous future for our organization."
+          />
         </Row>
       </Container>
 
@@ -237,5 +148,3 @@ export default function AboutUs(props) {
     </div>
   );
 }
-
-
