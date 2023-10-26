@@ -18,6 +18,7 @@ import ApplyNowButton from "../components/ApplyNowButton.js";
 import hiringNurses from "../images/hiringNurses.jpg";
 import hiringNursesOne from "../images/hiringNursesOne.jpg";
 import hiring from "../images/hiring.jpg";
+import PhoneNumberButton from "../components/PhoneNumberButton.js";
 
 function Homepage() {
   return (
@@ -35,12 +36,8 @@ function Homepage() {
             </h4>
             <section className="d-flex">
               <ApplyNowButton />
+              <PhoneNumberButton />
 
-              <Button className="rounded-pill btn2">
-                <a className="bt2a" href="tel:+1-415-812-4343">
-                  (415) 812-4343
-                </a>
-              </Button>
             </section>
           </Col>
           <Col
@@ -102,7 +99,7 @@ function Homepage() {
         <Row md={8}>
           <Col>
             <Col>
-              <h1 className="homepageHeaders">Join Our Elite Nursing Team</h1>
+              <h1 className="homepageHeaders textCenter">Join Our Elite Nursing Team</h1>
               <h4 className="textCenter">
                 We're on the lookout for dedicated and passionate nurses ready
                 to make a difference.

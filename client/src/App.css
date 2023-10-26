@@ -10,10 +10,15 @@
   width: 17px;
 }
 .nav-logo {
-  width: 25%;
+  width: 200px;
+  height: auto;
 }
+
 .navbar {
   margin-bottom: 20px;
+
+  border-radius: 15px 50px 30px;
+  box-shadow: 6px 6px 24px 0 rgba(0, 0, 0, 0.08);
 }
 
 .bold {
@@ -24,6 +29,7 @@
 .headerSizing {
   margin-top: 20px;
   color: white;
+  z-index: 1000; /* Add this line */
 }
 
 .headerContainer {
@@ -33,12 +39,31 @@
   width: 200px;
   height: 60px;
   box-shadow: 6px 6px 24px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 25px;
+  overflow: hidden !important;
+  background-color: white;
 }
+.custom-dropdown-toggle {
+  text-transform: none !important; /* No capitalization */
+  color: rgb(0 0 0 / 55%) !important; /* Change text color to black */
+  background-color: transparent !important; /* Change background color to transparent */
+  border-color: transparent !important; /* If there's a border, make it transparent */
+}
+
+/* Remove the dropdown arrow */
+.custom-dropdown-toggle::after {
+  display: none !important;
+}
+
 /* //////////////// */
 
 /* //Homepage */
 .container {
   max-width: 85% !important;
+}
+
+.textCenter {
+  text-align: center;
 }
 /* //Section1 */
 .topHeader {
@@ -67,20 +92,32 @@
   background-color: #f1e9e9 !important;
 }
 .bt2a {
-  
-    width: 150px;
-    text-align: center;
-    color: white,
-    
-  }
-
-  .apply-now-btn {
-    width: 150px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
+  width: 400px;
+  text-align: center;
+  color: white;
+}
+.custom-button {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  padding: 10px 20px; /* Adjust padding as needed */
 }
 
+.custom-button-link {
+  width: auto; /* Let the width adjust based on content */
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem; /* Adjust the font size to fit within the button */
+  text-decoration: none; /* Remove the underline from the link */
+}
+
+.apply-now-btn {
+  width: 150px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
 
 /* //section2 */
 .homepageNurseColumn {
@@ -130,7 +167,6 @@
   text-decoration: none;
 }
 
-
 /* //////////////////// */
 
 /* //ABOUT US PAGE */
@@ -157,26 +193,24 @@
   height: 400px;
 }
 
-.prblms{
+.prblms {
   border-radius: 15px 50px 30px;
   background: #73ad21;
   width: auto;
   height: 400px;
-  width:fit-content
+  width: fit-content;
 }
 /* //////////////////// Services */
-.values
-{
+.values {
   border-radius: 15px 50px !important;
-  
+
   padding: 20px;
   width: 200px;
   height: 150px;
 }
 
 /* /////////////////// */
-FOOTER
-.parentFooterLinks {
+FOOTER .parentFooterLinks {
   display: flex;
   text-align: center;
 }
@@ -212,7 +246,37 @@ html {
   padding: 0;
   list-style: none;
 }
-.footerIcon{
+.footerIcon {
   width: "32px";
-  height: "32px"
+  height: "32px";
+}
+
+
+/* //////employee card */
+.card-container {
+  width: 250px; /* or whatever you prefer */
+  height: 350px; /* or whatever you prefer */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s; /* adjust duration as desired */
+  perspective: 1000px; /* gives a nice 3D effect */
+}
+
+.card-container:hover {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* hides the side that is not facing the user */
+}
+
+.card-front {
+  /* the front does not need any special styling for flipping */
+}
+
+.card-back {
+  transform: rotateY(180deg);
 }

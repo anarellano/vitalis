@@ -12,8 +12,8 @@ export default function Header() {
     <div className="headerSizing">
       <Sticky enabled={true} bottomBoundary={3000}>
         <div>
-          <Navbar bg="light" variant="light">
-            <Container className="headerContainer">
+          <Navbar bg="light" variant="light" className="">
+            <Container>
               <Navbar.Brand href="/">
                 <img href="home" className="nav-logo" src={logo} />
               </Navbar.Brand>
@@ -30,13 +30,13 @@ export default function Header() {
                 <Dropdown>
                   <Dropdown.Toggle
                     variant="link"
-                    className="text-nowrap bold custom-dropdown"
+                    className="text-nowrap bold custom-dropdown-toggle"
                   >
                     Services
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item as={Link} to="/Services">
+                    <Dropdown.Item as={Link} to="/Staffing">
                       Staffing
                     </Dropdown.Item>
                     <Dropdown.Item as={Link} to="/MedicalConcierge">
