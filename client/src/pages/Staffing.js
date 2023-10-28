@@ -14,8 +14,9 @@ import {
   Input,
 } from "reactstrap";
 import ApplyNowButton from "../components/ApplyNowButton";
+import InfoCards from "../components/InfoCards";
 import PhoneNumberButton from "../components/PhoneNumberButton";
-
+import callMeStaffing from "../images/callMeStaffing.jpg";
 import TestimonialSlider from "../components/testimonialSlider";
 
 function Staffing() {
@@ -31,67 +32,30 @@ function Staffing() {
           </p>
           <Row>
             <Col>
-              <ApplyNowButton />
-            </Col>
-            <Col>
               <PhoneNumberButton />
             </Col>
           </Row>
         </Col>
       </Container>
 
-      {/* Section 2: infor cards */}
-      <Container className="d-flex justify-content-around my-5">
-        <Card
-          className="my-2"
-          color="light"
-          outline
-          style={{
-            width: "18rem",
-          }}
-        >
-          <CardBody>
-            <CardTitle className="bold">Location</CardTitle>
-            <CardText>
-              355 Geller Blvd, Suite 110, Daly City, CA, 94015
-            </CardText>
-          </CardBody>
-        </Card>
-        <Card
-          className="my-2"
-          color="light"
-          outline
-          style={{
-            width: "18rem",
-          }}
-        >
-          <CardBody>
-            <CardTitle className="bold">Phone</CardTitle>
-            <CardText>+1 (415) 812 - 4343</CardText>
-          </CardBody>
-        </Card>
-        <Card
-          className="my-2"
-          color="light"
-          outline
-          style={{
-            width: "18rem",
-          }}
-        >
-          <CardBody>
-            <CardTitle className="bold">Mail</CardTitle>
-            <CardText>
-              355 Geller Blvd, Suite 110, Daly City, CA, 94015
-            </CardText>
-          </CardBody>
-        </Card>
+      <Container className="my-5">
+        <Col md={6}>
+          <h3 className="mb-3">The Best Nurses in the Industry</h3>
+          <p>
+            Vitalis Staffing isn't just another nursing agency. We pride
+            ourselves on handpicking only the finest nurses. Our rigorous
+            selection process ensures that we have a team of professionals who
+            are not only qualified but are also deeply passionate about patient
+            care.
+          </p>
+          <p>
+            Our nurses undergo continuous training, are abreast with the latest
+            medical research, and consistently demonstrate clinical excellence.
+            When you choose Vitalis, you're opting for superior care delivered
+            with compassion and competence.
+          </p>
+        </Col>
       </Container>
-
-      {/* Section 3: Client TestimonialSlider */}
-      <Container>
-        <TestimonialSlider />
-      </Container>
-
       {/* Section 4: Values */}
       <Container className="mt-5">
         <div className="text-center mt-5">
@@ -168,9 +132,31 @@ function Staffing() {
         </Row>
       </Container>
 
+    
+
+      {/* Section 2: infor cards */}
+      <Container className="d-flex justify-content-around my-5">
+        <Container className="d-flex justify-content-around my-5">
+          <InfoCards
+            title="Location"
+            descption="355 Geller Blvd, Suite 110, Daly City, CA, 94015"
+          />
+          <InfoCards title="Phone" descption="+1 (415) 812 - 4343" />
+          <InfoCards
+            title="Mail"
+            descption="355 Geller Blvd, Suite 110, Daly City, CA, 94015"
+          />
+        </Container>
+      </Container>
+
+      {/* Section 3: Client TestimonialSlider */}
+      {/* <Container>
+        <TestimonialSlider />
+      </Container> */}
+
       {/* section 5: get in touch */}
       <Container className="d-flex my-5">
-        <Col className="me-5">
+        <Col className="me-5 prblms">
           <Form>
             <FormGroup>
               <h2 className="display-5">Get in touch</h2>
@@ -200,7 +186,9 @@ function Staffing() {
             </FormGroup>
           </Form>
         </Col>
-        <Col className="prblms me-5">image of us helping</Col>
+        <Col className="prblms prblms-content">
+          <img src={callMeStaffing} alt="Call Us NOW!" />
+        </Col>
       </Container>
     </div>
   );

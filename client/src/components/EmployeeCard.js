@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Col,
-  Card,
   CardBody,
   CardTitle,
   CardSubtitle,

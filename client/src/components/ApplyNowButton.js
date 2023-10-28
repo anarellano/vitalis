@@ -14,8 +14,9 @@ const ApplyNowButton = () => {
         <Button
             color="primary"
             size="lg"
-            className="bg-primary rounded-pill bold"
+            className="rounded-pill bold"
             as={Link}
+            style={{ backgroundColor: '#4681f4', borderColor: '#4681f4' }}
         >
             <a style={linkStyle} href="https://vitalisstaffing.clearcareonline.com/apply/">
                 Apply Now

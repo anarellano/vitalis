@@ -194,12 +194,22 @@
 }
 
 .prblms {
-  border-radius: 15px 50px 30px;
-  background: #73ad21;
-  width: auto;
-  height: 400px;
-  width: fit-content;
+  flex-basis: 50%;
 }
+
+.prblms img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 15px 50px 30px;
+}
+
+.prblms-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* //////////////////// Services */
 .values {
   border-radius: 15px 50px !important;

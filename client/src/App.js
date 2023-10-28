@@ -5,7 +5,7 @@ import Homepage from "./pages/Homepage";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import AboutUs from "./pages/AboutUs";
-import Jobs from "./pages/jobs";
+import Jobs from "./pages/Jobs";
 import Staffing from "./pages/Staffing";
 import ApplyNow from "./pages/applyNow";
 import CNA from "./pages/cna";

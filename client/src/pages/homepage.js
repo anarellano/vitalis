@@ -9,14 +9,10 @@ import timetable from "../images/timetable.png";
 import money from "../images/money.png";
 import trophy from "../images/trophy.png";
 import medium from "../images/medium.png";
-// import ApplyNow from "./ApplyNow";
 import firstPicture from "../images/firstPicture.jpg";
-import nurseArmy from "../images/nurseArmy.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import ApplyNowButton from "../components/ApplyNowButton.js";
-import hiringNurses from "../images/hiringNurses.jpg";
-import hiringNursesOne from "../images/hiringNursesOne.jpg";
 import hiring from "../images/hiring.jpg";
 import PhoneNumberButton from "../components/PhoneNumberButton.js";
 
@@ -32,7 +28,7 @@ function Homepage() {
             </h1>
             <h4 className="mb-3 text-warp">
               At Vitalis Staffing, we recruit top-tier nurses in the Bay Area.
-              Click the "Apply Now" button below.
+              
             </h4>
             <section className="d-flex">
               <ApplyNowButton />
@@ -56,7 +52,7 @@ function Homepage() {
       {/* Section 2: Cater to Audience/nurse beneifits */}
       <Container className="threeReasonRowPadding my-5">
         <Row>
-          <Col><img className="prblms" src={firstPicture}  alt="Description"/></Col>
+        <Col className="prblms prblms-content"><img  src={firstPicture}  alt="Description"/></Col>
           <Col className="d-flex flex-column">
             <Card.Body className="threeReasonRow">
               <Card.Title>
@@ -159,44 +155,47 @@ function Homepage() {
       <Container className=" my-5">
         {" "}
         <Row className="d-flex">
-          <Col className="d-grid gap-3">
-            <Row className="flex-column align-items-start mb-4">
-              <h1>1. Apply Online</h1>
-              <p className="mb-2">
-                Fill out our online application to get started with the hiring
-                process.
-              </p>
+        {/* First Column: Hiring Steps */}
+        <Col className="process-steps">
+            <Row className="flex-column align-items-start justify-content-between">
+                {/* Step 1 */}
+                <div className="step mb-4">
+                    <h1>1. Apply Online</h1>
+                    <p className="mb-2">
+                        Fill out our online application to get started with the hiring process.
+                    </p>
+                </div>
+                {/* Step 2 */}
+                <div className="step mb-4">
+                    <h1>2. Orientation</h1>
+                    <p className="mb-2">
+                        Attend an orientation session to understand our work culture and expectations.
+                    </p>
+                </div>
+                {/* Step 3 */}
+                <div className="step">
+                    <h1>3. Deployment</h1>
+                    <p>
+                        Once approved, you'll be deployed to your designated work location.
+                    </p>
+                </div>
             </Row>
-            <Row className="flex-column align-items-start mb-4">
-              <h1>2. Orientation</h1>
-              <p className="mb-2">
-                Attend an orientation session to understand our work culture and
-                expectations.
-              </p>
-            </Row>
-            <Row className="flex-column align-items-start">
-              <h1>3. Deployment</h1>
-              <p>
-                Once approved, you'll be deployed to your designated work
-                location.
-              </p>
-            </Row>
-          </Col>
+        </Col>
+          <Col className="prblms prblms-content">
 
-          <Col>
-            <img className="prblms" src={hiring} alt="Hire Nurses" />
+            <img src={hiring} alt="Hire Nurses" />
           </Col>
         </Row>
       </Container>
 
       {/* Section 5:  testimonials, slide show? */}
-      <Container className=" my-5">
+      {/* <Container className=" my-5">
         {" "}
         <Row className="d-flex">
           <h1 style={{ textAlign: "center" }}>What our great nurses say about us</h1>
           <TestimonialSlider />
         </Row>{" "}
-      </Container>
+      </Container> */}
 
       {/* section 6: FAQ with number and email again one the right side */}
       {/* <Container className=" my-5">
