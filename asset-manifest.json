@@ -1,20 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.74c5713a.css",
-    "main.js": "/static/js/main.e3603a6e.js",
-    "static/media/hiringNursesOne.jpg": "/static/media/hiringNursesOne.6ddb96feed55a6efb4f1.jpg",
+    "main.css": "/static/css/main.2ccac830.css",
+    "main.js": "/static/js/main.8f58022f.js",
+    "static/media/callSomeone.jpg": "/static/media/callSomeone.42c1e2b6011aafa81b9a.jpg",
     "static/media/hiring.jpg": "/static/media/hiring.5fbf3a4e5285ef0fb815.jpg",
-    "static/media/hiringNurses.jpg": "/static/media/hiringNurses.37dedc1c734e7d4ce789.jpg",
-    "static/media/nurseArmy.jpg": "/static/media/nurseArmy.3f438313d3bb38b38b83.jpg",
     "static/media/firstPicture.jpg": "/static/media/firstPicture.47a4d56c0d31a2b795ec.jpg",
+    "static/media/vacation.jpg": "/static/media/vacation.81effa400c02435c50e4.jpg",
+    "static/media/familyOfNurse.jpg": "/static/media/familyOfNurse.3d68e25208bc21eb982a.jpg",
+    "static/media/providingCare.jpg": "/static/media/providingCare.f6f1f1912e02ba67326f.jpg",
+    "static/media/callMe.jpg": "/static/media/callMe.0a9edc12b2f5763c28e6.jpg",
+    "static/media/consultation.jpg": "/static/media/consultation.bc551b18ea350d93861e.jpg",
+    "static/media/insurance.jpg": "/static/media/insurance.201d93bd25f165c466e2.jpg",
+    "static/media/justine.jpg": "/static/media/justine.821c0349582d5df17aa9.jpg",
+    "static/media/anton.jpg": "/static/media/anton.73907f2fcce520f67045.jpg",
+    "static/media/raquel.jpg": "/static/media/raquel.e05f18f81e772d0d3ecd.jpg",
+    "static/media/money.jpg": "/static/media/money.d0dde51e92ac82e638a7.jpg",
+    "static/media/callMeStaffing.jpg": "/static/media/callMeStaffing.8264c45a7a948bb58bb4.jpg",
     "static/media/logo.png": "/static/media/logo.b87c7ac537d0a45d43e1.png",
     "static/media/medium.png": "/static/media/medium.06f77f15d307a069cfdd.png",
     "index.html": "/index.html",
-    "main.74c5713a.css.map": "/static/css/main.74c5713a.css.map",
-    "main.e3603a6e.js.map": "/static/js/main.e3603a6e.js.map"
+    "main.2ccac830.css.map": "/static/css/main.2ccac830.css.map",
+    "main.8f58022f.js.map": "/static/js/main.8f58022f.js.map"
   },
   "entrypoints": [
-    "static/css/main.74c5713a.css",
-    "static/js/main.e3603a6e.js"
+    "static/css/main.2ccac830.css",
+    "static/js/main.8f58022f.js"
   ]
 }
