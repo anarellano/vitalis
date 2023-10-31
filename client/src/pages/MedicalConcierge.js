@@ -67,17 +67,17 @@ function MedicalConcierge() {
         <Col>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>What Makes Us Different?</h2>
             <ul style={{ listStyleType: "none", fontSize: '1rem', lineHeight: '2.5rem' }}>
-                <li style={{ marginBottom: '20px' }}>
+                <li >
                     💼 <strong>Personalized Care:</strong> Every patient is unique,
                     and so is our approach. We tailor our services to meet your
                     individual health needs.
                 </li>
-                <li style={{ marginBottom: '20px' }}>
+                <li >
                     ⏰ <strong>24/7 Accessibility:</strong> Our care team is
                     available around the clock to ensure you always have the support
                     you need.
                 </li>
-                <li style={{ marginBottom: '20px' }}>
+                <li >
                     🩺 <strong>Highly Trained Staff:</strong> Our team comprises
                     top-tier medical professionals dedicated to providing the best
                     care possible.
