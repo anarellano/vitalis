@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2ccac830.css",
-    "main.js": "/static/js/main.8f58022f.js",
+    "main.js": "/static/js/main.0a4bc9e0.js",
     "static/media/callSomeone.jpg": "/static/media/callSomeone.42c1e2b6011aafa81b9a.jpg",
     "static/media/hiring.jpg": "/static/media/hiring.5fbf3a4e5285ef0fb815.jpg",
     "static/media/firstPicture.jpg": "/static/media/firstPicture.47a4d56c0d31a2b795ec.jpg",
@@ -9,7 +9,7 @@
     "static/media/familyOfNurse.jpg": "/static/media/familyOfNurse.3d68e25208bc21eb982a.jpg",
     "static/media/providingCare.jpg": "/static/media/providingCare.f6f1f1912e02ba67326f.jpg",
     "static/media/callMe.jpg": "/static/media/callMe.0a9edc12b2f5763c28e6.jpg",
-    "static/media/consultation.jpg": "/static/media/consultation.bc551b18ea350d93861e.jpg",
+    "static/media/consultation.jpg": "/static/media/consultation.e378c516d86776349c4b.jpg",
     "static/media/insurance.jpg": "/static/media/insurance.201d93bd25f165c466e2.jpg",
     "static/media/justine.jpg": "/static/media/justine.821c0349582d5df17aa9.jpg",
     "static/media/anton.jpg": "/static/media/anton.73907f2fcce520f67045.jpg",
@@ -20,10 +20,10 @@
     "static/media/medium.png": "/static/media/medium.06f77f15d307a069cfdd.png",
     "index.html": "/index.html",
     "main.2ccac830.css.map": "/static/css/main.2ccac830.css.map",
-    "main.8f58022f.js.map": "/static/js/main.8f58022f.js.map"
+    "main.0a4bc9e0.js.map": "/static/js/main.0a4bc9e0.js.map"
   },
   "entrypoints": [
     "static/css/main.2ccac830.css",
-    "static/js/main.8f58022f.js"
+    "static/js/main.0a4bc9e0.js"
   ]
 }

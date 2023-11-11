@@ -19,6 +19,7 @@ import callSomeone from "../images/callSomeone.jpg";
 import money from "../images/money.jpg";
 import insurance from "../images/insurance.jpg";
 import vacation from "../images/vacation.jpg";
+import SendUsMessage from "../components/SendUsMessage.js";
 
 function Jobs() {
   return (
@@ -138,42 +139,63 @@ function Jobs() {
 
 </Container> */}
 
-<Container className="my-5">
-    <h2 className="display-5 text-center mb-5">Benefits We Offer!</h2>
+      <Container className="my-5">
+        <h2 className="display-5 text-center mb-5">Benefits We Offer!</h2>
 
-    <Row>
-        <Col md={4} className="mb-4">
+        <Row>
+          <Col md={4} className="mb-4">
             <Card className="h-100 shadow">
-                <CardBody>
-                    <img src={vacation} alt="Image representing flexibility" className="mb-3 img-fluid"/>
-                    <h4>Unmatched Flexibility</h4>
-                    <p>At Vitalis Staffing, we offer exceptionally flexible rates. Pick up shifts as per your convenience, giving you more control over your life.</p>
-                </CardBody>
+              <CardBody>
+                <img
+                  src={vacation}
+                  alt="Image representing flexibility"
+                  className="mb-3 img-fluid"
+                />
+                <h4>Unmatched Flexibility</h4>
+                <p>
+                  At Vitalis Staffing, we offer exceptionally flexible rates.
+                  Pick up shifts as per your convenience, giving you more
+                  control over your life.
+                </p>
+              </CardBody>
             </Card>
-        </Col>
+          </Col>
 
-        <Col md={4} className="mb-4">
+          <Col md={4} className="mb-4">
             <Card className="h-100 shadow">
-                <CardBody>
-                    <img src={insurance} alt="Image representing insurance" className="mb-3 img-fluid"/>
-                    <h4>Insurance for Full-Time Employees</h4>
-                    <p>Full-time employees at Vitalis Staffing are our priority. Enjoy comprehensive medical insurance coverage.</p>
-                </CardBody>
+              <CardBody>
+                <img
+                  src={insurance}
+                  alt="Image representing insurance"
+                  className="mb-3 img-fluid"
+                />
+                <h4>Insurance for Full-Time Employees</h4>
+                <p>
+                  Full-time employees at Vitalis Staffing are our priority.
+                  Enjoy comprehensive medical insurance coverage.
+                </p>
+              </CardBody>
             </Card>
-        </Col>
+          </Col>
 
-        <Col md={4} className="mb-4">
+          <Col md={4} className="mb-4">
             <Card className="h-100 shadow">
-                <CardBody>
-                    <img src={money} alt="Image representing competitive pay" className="mb-3 img-fluid"/>
-                    <h4>Competitive Compensation</h4>
-                    <p>Recognizing your dedication, we offer a compensation that stands out in the industry.</p>
-                </CardBody>
+              <CardBody>
+                <img
+                  src={money}
+                  alt="Image representing competitive pay"
+                  className="mb-3 img-fluid"
+                />
+                <h4>Competitive Compensation</h4>
+                <p>
+                  Recognizing your dedication, we offer a compensation that
+                  stands out in the industry.
+                </p>
+              </CardBody>
             </Card>
-        </Col>
-    </Row>
-</Container>
-
+          </Col>
+        </Row>
+      </Container>
 
       <BottomBox />
 
@@ -217,43 +239,14 @@ function Jobs() {
         >
           <CardBody>
             <CardTitle className="bold">Mail</CardTitle>
-            <CardText>
-              355 Geller Blvd, Suite 110, Daly City, CA, 94015
-            </CardText>
+            <CardText>347 Geller Blvd, Suite D1, Daly City, CA, 94015</CardText>
           </CardBody>
         </Card>
       </Container>
 
       <Container className="d-flex my-5">
         <Col className="me-5 prblms">
-          <Form>
-            <FormGroup>
-              <h2 className="display-5">Get in touch</h2>
-              <p>we would love to here from you</p>
-              <Input className="me-5" placeholder="First Name" />
-              <Input className="mt-4" placeholder="Last Name" />
-
-              <Input
-                className="mt-4"
-                type="email"
-                id="email"
-                placeholder="Email"
-              />
-              <Input
-                className="mt-4"
-                type="number"
-                id="number"
-                placeholder="Phone number"
-              />
-              <Input
-                className="mt-4"
-                type="textarea"
-                name="text"
-                id="exampleText"
-                placeholder="Send us a message"
-              />
-            </FormGroup>
-          </Form>
+          <SendUsMessage />
         </Col>
         <Col className="prblms prblms-content">
           <img src={callSomeone} />

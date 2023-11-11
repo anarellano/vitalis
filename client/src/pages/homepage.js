@@ -1,9 +1,7 @@
 import React from "react";
-import { Button } from "reactstrap";
 import { Card, Container, Row, Col } from "react-bootstrap";
 
-import Faq from "../components/faq.js";
-import TestimonialSlider from "../components/testimonialSlider.js";
+import Faq from "../components/Faq.js";
 import BottomBox from '../components/BottomBox.js';
 import timetable from "../images/timetable.png";
 import money from "../images/money.png";
@@ -17,6 +15,37 @@ import hiring from "../images/hiring.jpg";
 import PhoneNumberButton from "../components/PhoneNumberButton.js";
 
 function Homepage() {
+  const questionsAndAnswers = [
+    {
+      question: "What are the pay rates, and do you offer benefits or bonuses?",
+      answer: "Pay rates vary based on location and facility. Full-time employees receive health and dental benefits. Specifics can be discussed further based on your qualifications and preferences."
+    },
+    {
+      question: "How flexible are the schedules? Can I choose preferred shifts or locations?",
+      answer: "We offer flexible schedules, allowing you to choose preferred shifts and locations within our affiliated facilities in the Bay Area."
+    },
+    {
+      question: "What types of assignments are available?",
+      answer: "We offer a variety of full-time and part-time assignments, including positions as Registered Nurses, Licensed Vocational Nurses, and Certified Nursing Assistants."
+    },
+    // {
+    //   question: "Do you provide orientation or training for new assignments?",
+    //   answer: "Yes, we provide comprehensive on-site training and orientation, along with bi-monthly check-ins for continuous support and assessment."
+    // },
+    // {
+    //   question: "Do you assist with obtaining CNA licenses or reimburse these costs?",
+    //   answer: "Yes, we support your nursing education pursuits, covering expenses related to obtaining a CNA license through a school-to-work program agreement."
+    // },
+    // {
+    //   question: "Do you provide housing or stipends for travel nurses?",
+    //   answer: "Yes, we offer housing and travel support, varying based on the contract. Specifics are negotiated during the hiring process."
+    // },
+    // {
+    //   question: "What support can I expect from my recruiter or point of contact?",
+    //   answer: "You can reach out 24/7 for work-related concerns. Expect prompt and supportive communication to assist with any issues or queries."
+    // }
+  ];
+  
   return (
     <div>
       <Container className="my-5">
@@ -56,7 +85,7 @@ function Homepage() {
           <Col className="d-flex flex-column">
             <Card.Body className="threeReasonRow">
               <Card.Title>
-                <img src={timetable} />
+                <img src={timetable} alt="timetable" />
                 Flexible Hours
               </Card.Title>
               <Card.Text>
@@ -67,7 +96,7 @@ function Homepage() {
 
             <Card.Body className="threeReasonRow">
               <Card.Title>
-                <img src={money} />
+                <img src={money} alt="money" />
                 Competitive Rates
               </Card.Title>
               <Card.Text>
@@ -78,7 +107,7 @@ function Homepage() {
 
             <Card.Body className="threeReasonRow">
               <Card.Title>
-                <img src={trophy} />
+                <img src={trophy} alt="throphy"/>
                 Opportunity to Grow
               </Card.Title>
               <Card.Text>
@@ -198,15 +227,14 @@ function Homepage() {
       </Container> */}
 
       {/* section 6: FAQ with number and email again one the right side */}
-      {/* <Container className=" my-5">
-        {" "}
+      <Container className=" my-5">
         <Row className="d-flex">
           <Col></Col>
           <Col>
-            <Faq />
+            <Faq items={questionsAndAnswers}/>
           </Col>
-        </Row>{" "}
-      </Container> */}
+        </Row>
+      </Container>
 
       {/* section 7: Call to action */}
    <BottomBox />

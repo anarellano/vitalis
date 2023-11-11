@@ -1,5 +1,4 @@
-import React, { useRef } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import {
   Container,
   Row,
@@ -7,17 +6,12 @@ import {
   Card,
   CardTitle,
   CardText,
-  Button,
   CardBody,
-  Form,
-  FormGroup,
-  Input,
 } from "reactstrap";
-import ApplyNowButton from "../components/ApplyNowButton";
 import InfoCards from "../components/InfoCards";
 import PhoneNumberButton from "../components/PhoneNumberButton";
 import callMeStaffing from "../images/callMeStaffing.jpg";
-import TestimonialSlider from "../components/testimonialSlider";
+import SendUsMessage from "../components/SendUsMessage";
 
 function Staffing() {
   return (
@@ -132,14 +126,12 @@ function Staffing() {
         </Row>
       </Container>
 
-    
-
       {/* Section 2: infor cards */}
       <Container className="d-flex justify-content-around my-5">
         <Container className="d-flex justify-content-around my-5">
           <InfoCards
             title="Location"
-            descption="355 Geller Blvd, Suite 110, Daly City, CA, 94015"
+            descption="347 Geller Blvd, Suite D1, Daly City, CA, 94015"
           />
           <InfoCards title="Phone" descption="+1 (415) 812 - 4343" />
           <InfoCards
@@ -157,34 +149,7 @@ function Staffing() {
       {/* section 5: get in touch */}
       <Container className="d-flex my-5">
         <Col className="me-5 prblms">
-          <Form>
-            <FormGroup>
-              <h2 className="display-5">Get in touch</h2>
-              <p>we would love to here from you</p>
-              <Input className="me-5" placeholder="First Name" />
-              <Input className="mt-4" placeholder="Last Name" />
-
-              <Input
-                className="mt-4"
-                type="email"
-                id="email"
-                placeholder="Email"
-              />
-              <Input
-                className="mt-4"
-                type="number"
-                id="number"
-                placeholder="Phone number"
-              />
-              <Input
-                className="mt-4"
-                type="textarea"
-                name="text"
-                id="exampleText"
-                placeholder="Send us a message"
-              />
-            </FormGroup>
-          </Form>
+          <SendUsMessage />
         </Col>
         <Col className="prblms prblms-content">
           <img src={callMeStaffing} alt="Call Us NOW!" />

@@ -1,32 +1,12 @@
 import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Form,
-  FormGroup,
-  Input,
-} from "reactstrap";
-// import medicalImage from '../images/your-medical-image.jpg'; // Update the path
-import TestimonialSlider from "../components/testimonialSlider";
+import { Container, Row, Col } from "reactstrap";
 import PhoneNumberButton from "../components/PhoneNumberButton";
 import consultation from "../images/consultation.jpg";
 import providingCare from "../images/providingCare.jpg";
 
-function MedicalConcierge() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    let contactAnswers = {
-      firstname: e.target[0].value,
-      lastname: e.target[1].value,
-      email: e.target[2].value,
-      phone: e.target[3].value,
-      message: e.target[4].value,
-    };
-    console.log(contactAnswers);
-  };
+import SendUsMessage from "../components/SendUsMessage";
 
+function MedicalConcierge() {
   return (
     <div>
       <Container className="d-flex my-5">
@@ -63,38 +43,45 @@ function MedicalConcierge() {
       </Container>
 
       <Container className="my-5">
-    <Row>
-        <Col>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>What Makes Us Different?</h2>
-            <ul style={{ listStyleType: "none", fontSize: '1rem', lineHeight: '2.5rem' }}>
-                <li >
-                    💼 <strong>Personalized Care:</strong> Every patient is unique,
-                    and so is our approach. We tailor our services to meet your
-                    individual health needs.
-                </li>
-                <li >
-                    ⏰ <strong>24/7 Accessibility:</strong> Our care team is
-                    available around the clock to ensure you always have the support
-                    you need.
-                </li>
-                <li >
-                    🩺 <strong>Highly Trained Staff:</strong> Our team comprises
-                    top-tier medical professionals dedicated to providing the best
-                    care possible.
-                </li>
-                <li>
-                    💰 <strong>Cost Transparency:</strong> No hidden fees or
-                    surprises. We provide clear cost structures, ensuring you're
-                    always informed.
-                </li>
+        <Row>
+          <Col>
+            <h2 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>
+              What Makes Us Different?
+            </h2>
+            <ul
+              style={{
+                listStyleType: "none",
+                fontSize: "1rem",
+                lineHeight: "2.5rem",
+              }}
+            >
+              <li>
+                💼 <strong>Personalized Care:</strong> Every patient is unique,
+                and so is our approach. We tailor our services to meet your
+                individual health needs.
+              </li>
+              <li>
+                ⏰ <strong>24/7 Accessibility:</strong> Our care team is
+                available around the clock to ensure you always have the support
+                you need.
+              </li>
+              <li>
+                🩺 <strong>Highly Trained Staff:</strong> Our team comprises
+                top-tier medical professionals dedicated to providing the best
+                care possible.
+              </li>
+              <li>
+                💰 <strong>Cost Transparency:</strong> No hidden fees or
+                surprises. We provide clear cost structures, ensuring you're
+                always informed.
+              </li>
             </ul>
-        </Col>
-        <Col className="prblms prblms-content">
+          </Col>
+          <Col className="prblms prblms-content">
             <img src={providingCare} />
-        </Col>
-    </Row>
-</Container>
-
+          </Col>
+        </Row>
+      </Container>
 
       <Container className="d-flex my-5">
         <Row>
@@ -132,28 +119,7 @@ function MedicalConcierge() {
       {/* Getting in Touch Section */}
       <Container className="d-flex my-5">
         <Col className="me-5">
-          <Form onSubmit={handleSubmit}>
-            <FormGroup>
-              <h2 className="display-5">Get in touch</h2>
-              <p>We would love to hear from you</p>
-              <Input placeholder="First Name" />
-              <Input className="mt-4" placeholder="Last Name" />
-              <Input className="mt-4" type="email" placeholder="Email" />
-              <Input
-                className="mt-4"
-                type="number"
-                placeholder="Phone number"
-              />
-              <Input
-                className="mt-4"
-                type="textarea"
-                placeholder="Send us a message"
-              />
-            </FormGroup>
-            <Button className="rounded-pill" color="primary" size="lg">
-              Submit
-            </Button>
-          </Form>
+          <SendUsMessage />
         </Col>
         <Col className="me-5">{/* Add an Image or Content here */}</Col>
       </Container>
