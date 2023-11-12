@@ -43,21 +43,21 @@ async function sendCoolEmail(emailData) {
 // setup();
 // sendCoolEmail();
 
-module.exports = sendCoolEmail;
+// module.exports = sendCoolEmail;
 
-// function sendCoolEmail() {
-//   const template = {
-//     from: 'cool guy',
-//     to: "anton@vitalisstaffing.com",
-//     subject: 'yeah we did that',
-//     generateTextFromHTML: true,
-//     html: `
-//       <h1>ALERT!!!!!!</h1>
-//       <pre>whatever</pre>
-//     `
-//   }
-//   apiHandler.sendEmail(template)
-// }
+function sendCoolEmail() {
+  const template = {
+    from: 'cool guy',
+    to: "anton@vitalisstaffing.com",
+    subject: 'yeah we did that',
+    generateTextFromHTML: true,
+    html: `
+      <h1>ALERT!!!!!!</h1>
+      <pre>whatever</pre>
+    `
+  }
+  apiHandler.sendEmail(template)
+}
 
-// setup()
-// sendCoolEmail()
+setup()
+sendCoolEmail()
