@@ -8,6 +8,7 @@ node_modules/
 client/build/
 
 config.json
+token.json
 
 # testing
 /coverage
