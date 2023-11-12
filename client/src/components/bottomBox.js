@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button } from "reactstrap";
+import { Container } from "reactstrap";
 import ApplyNowButton from "./ApplyNowButton";
 
 function BottomBox() {

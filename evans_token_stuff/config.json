@@ -1,0 +1,8 @@
+{
+  "client_id": "509387179487-74ha9n0mnhd9nehafo3ofjgpouhho1qq.apps.googleusercontent.com",
+  "client_secret": "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",
+  "user": "anton@vitalisstaffing.com",
+  "redirect_uris": ["https://developers.google.com/oauthplayground"],
+  "refresh_token": "1//05DJKlMTblWj2CgYIARAAGAUSNwF-L9IrfbXht_G5l466sC7VTSioTRVA9QbXR522cau-c3uYv9m72SZa1p6fn8QrQX1T1C3HR6E",
+  "enabled": true
+}

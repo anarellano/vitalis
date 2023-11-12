@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
   Container,
   Row,
@@ -6,15 +6,10 @@ import {
   Card,
   CardTitle,
   CardText,
-  Button,
   CardBody,
-  Input,
-  Form,
-  FormGroup,
 } from "reactstrap";
 import ApplyNowButton from "../components/ApplyNowButton.js";
 import BottomBox from "../components/BottomBox.js";
-import TestimonialSlider from "../components/testimonialSlider.js";
 import callSomeone from "../images/callSomeone.jpg";
 import money from "../images/money.jpg";
 import insurance from "../images/insurance.jpg";
@@ -148,7 +143,7 @@ function Jobs() {
               <CardBody>
                 <img
                   src={vacation}
-                  alt="Image representing flexibility"
+                  alt="flexibility"
                   className="mb-3 img-fluid"
                 />
                 <h4>Unmatched Flexibility</h4>
@@ -166,7 +161,7 @@ function Jobs() {
               <CardBody>
                 <img
                   src={insurance}
-                  alt="Image representing insurance"
+                  alt="insurance"
                   className="mb-3 img-fluid"
                 />
                 <h4>Insurance for Full-Time Employees</h4>
@@ -183,7 +178,7 @@ function Jobs() {
               <CardBody>
                 <img
                   src={money}
-                  alt="Image representing competitive pay"
+                  alt="competitive pay"
                   className="mb-3 img-fluid"
                 />
                 <h4>Competitive Compensation</h4>
@@ -249,7 +244,7 @@ function Jobs() {
           <SendUsMessage />
         </Col>
         <Col className="prblms prblms-content">
-          <img src={callSomeone} />
+          <img src={callSomeone} alt="call someone" />
         </Col>
       </Container>
     </div>

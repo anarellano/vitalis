@@ -15,7 +15,7 @@ export default function Header() {
           <Navbar bg="light" variant="light" className="">
             <Container>
               <Navbar.Brand href="/">
-                <img href="home" className="nav-logo" src={logo} />
+                <img href="home" className="nav-logo" src={logo} alt="logo" />
               </Navbar.Brand>
               <Nav>
                 {/* <Nav.Link className="text-nowrap bold" as={Link} to="/">

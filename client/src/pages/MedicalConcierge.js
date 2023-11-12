@@ -78,7 +78,7 @@ function MedicalConcierge() {
             </ul>
           </Col>
           <Col className="prblms prblms-content">
-            <img src={providingCare} />
+            <img src={providingCare} alt="provide care"/>
           </Col>
         </Row>
       </Container>
@@ -89,6 +89,7 @@ function MedicalConcierge() {
             <img
               src={consultation}
               style={{ maxHeight: "100%", width: "auto" }}
+              alt="consultation"
             />
           </Col>
           <Col className="prblms ">

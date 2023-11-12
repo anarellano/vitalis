@@ -12,7 +12,6 @@ import CNA from "./pages/cna";
 import RN from "./pages/rn";
 import LVN from "./pages/lvn";
 import NurseTalent from "./pages/nurseTalent";
-import FillOutForm from "./pages/fillOutForm";
 import FreeEducation from "./pages/freeEducation";
 import MedicalConcierge from "./pages/MedicalConcierge";
 //
@@ -26,7 +25,6 @@ const websiteRoutes = [
   { path: "/LVN", component: LVN },
   { path: "/NurseTalent", component: NurseTalent },
   { path: "/RN", component: RN },
-  { path: "/FillOutForm", component: FillOutForm },
   { path: "/FreeEducation", component: FreeEducation },
   { path: "/MedicalConcierge", component: MedicalConcierge },
 ];
