@@ -5,125 +5,102 @@ import consultation from "../images/consultation.jpg";
 import providingCare from "../images/providingCare.jpg";
 
 import SendUsMessage from "../components/SendUsMessage";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPersonDotsFromLine,
+  faCalendar,
+  faUserDoctor,
+  faDollarSign,
+} from "@fortawesome/free-solid-svg-icons";
 
 function MedicalConcierge() {
   return (
     <div>
-      <Container className="d-flex my-5">
-        <Col className="">
-          <h1 className="display-4">Medical Concierge Services</h1>
-          <p className="page-intro">
-            We offer personalized medical assistance, round-the-clock support,
-            and immediate appointments with top specialists. Experience
-            healthcare like never before!
-          </p>
+      <div className="flex-col mx-auto max-w-6xl">
+        <h1 className="display-3 mb-4">Medical Concierge </h1>
+
+        <h4 className="">
+          We offer personalized medical assistance, round-the-clock support, and
+          immediate appointments with top specialists. Experience healthcare
+          like never before!
+        </h4>
+
+        <div className="my-4">
           <PhoneNumberButton />
-        </Col>
-      </Container>
+        </div>
+      </div>
 
-      <Container className="my-5">
-        <h2>Introducing Vitalis Staffing's Elite Medical Concierge Program</h2>
-        <p>
-          Recognizing the immense benefits of home-based recovery and medical
-          management, Vitalis Staffing collaborates with top-tier in-home care
-          providers. There's no place like home, especially when it comes to
-          healing. With dedicated, personalized care and unparalleled privacy,
-          our aim is to ensure that patients can recover in a familiar,
-          comforting environment. Our partnership with Concierge Nursing
-          Referral Services and Heal At Home enables us to rigorously vet and
-          introduce patients to a wide spectrum of clinicians. This includes
-          services across numerous Californian communities. Whenever the need
-          arises for private duty nurses or specialized clinicians, Vitalis
-          Staffing is here to support. Our vast network encompasses experienced
-          healthcare professionals such as RNs, LVNs, and other certified
-          practitioners. Their areas of expertise range from surgical
-          preparations to post-operative care, handling of acute and chronic
-          conditions, and dedicated palliative and end-of-life care.
+      {/* <div className="flex-col mx-auto max-w-6xl my-8">
+        <p className="text-3xl font-semibold">
+          Introducing Vitalis Staffing's Elite Medical Concierge Program
         </p>
-      </Container>
+        <p className="text-xl mt-4">
+          Vitalis Staffing partners with leading in-home care providers to
+          deliver personalized, private healthcare at home. Our network of
+          skilled clinicians, covering everything from surgery to palliative
+          care, ensures top-quality home-based recovery across the bay area.
+        </p>
+      </div> */}
 
-      <Container className="my-5">
-        <Row>
-          <Col>
-            <h2 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>
-              What Makes Us Different?
-            </h2>
-            <ul
-              style={{
-                listStyleType: "none",
-                fontSize: "1rem",
-                lineHeight: "2.5rem",
-              }}
-            >
-              <li>
-                💼 <strong>Personalized Care:</strong> Every patient is unique,
-                and so is our approach. We tailor our services to meet your
-                individual health needs.
-              </li>
-              <li>
-                ⏰ <strong>24/7 Accessibility:</strong> Our care team is
-                available around the clock to ensure you always have the support
-                you need.
-              </li>
-              <li>
-                🩺 <strong>Highly Trained Staff:</strong> Our team comprises
-                top-tier medical professionals dedicated to providing the best
-                care possible.
-              </li>
-              <li>
-                💰 <strong>Cost Transparency:</strong> No hidden fees or
-                surprises. We provide clear cost structures, ensuring you're
-                always informed.
-              </li>
-            </ul>
-          </Col>
-          <Col className="prblms prblms-content">
-            <img src={providingCare} alt="provide care"/>
-          </Col>
-        </Row>
-      </Container>
+      <div className="flex-col mx-auto max-w-6xl my-5">
+        <h1 className="display-5">What Makes Us Different?</h1>
+        <ul className="list-inside space-y-4 text-xl">
+          <li className="my-4">
+            <FontAwesomeIcon icon={faPersonDotsFromLine} />
+            <strong> Personalized Care:</strong> Every patient is unique, so we
+            tailor our services to meet your individual health needs.
+          </li>
+          <li className="my-4">
+            <FontAwesomeIcon icon={faCalendar} />
+            <strong> 24/7 Accessibility:</strong> Our care team is available
+            around the clock to ensure you always have the support you need.
+          </li>
+          <li className="my-4">
+            <FontAwesomeIcon icon={faUserDoctor} />
+            <strong> Highly Trained Staff:</strong> Our team comprises top-tier
+            medical professionals dedicated to providing the best care possible.
+          </li>
+          <li className="my-4">
+            <FontAwesomeIcon icon={faDollarSign} />{" "}
+            <strong> Cost Transparency:</strong> No hidden fees or surprises. We
+            provide clear cost structures, ensuring you're always informed.
+          </li>
+        </ul>
+      </div>
 
-      <Container className="d-flex my-5">
-        <Row>
-          <Col className="prblms prblms-content">
+      <div className="mx-auto max-w-6xl my-5">
+        <div className="flex flex-wrap">
+          <div className="w-full md:w-1/2 pe-5">
             <img
+              className="rounded-3xl"
               src={consultation}
               style={{ maxHeight: "100%", width: "auto" }}
               alt="consultation"
             />
-          </Col>
-          <Col className="prblms ">
-            <h4>OUR PROCESS</h4>
-            <h2>How does our Concierge work?</h2>
-            <ol style={{ lineHeight: "2" }}>
+          </div>
+          <div className="w-full md:w-1/2 pe-5">
+            <h2 className="display-6 mb-4">How does our Concierge work?</h2>
+            <ol className="list-decimal list-inside space-y-4 text-xl">
               <li>
-                First, we conduct an initial phone consultation to understand
-                what your healthcare needs are and to be sure a self-directed
-                care program is a good fit.
+                Initial phone consultation to assess your healthcare needs.
               </li>
               <li>
-                A Nurse Care Manager then conducts a comprehensive care
-                consultation to understand your needs and preferences, and also
-                connects with your physician to go over the care plan.
+                Comprehensive evaluation by a Nurse Care Manager to tailor your
+                care plan.
               </li>
               <li>
-                Your dedicated Care Coordination Manager identifies the
-                appropriate type of clinicians based on your specific care needs
-                and preferences and coordinates introductions to the available
-                pool of qualified clinicians for your consideration.
+                Coordination by a Care Manager to connect you with suitable
+                clinicians.
               </li>
             </ol>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
 
       {/* Getting in Touch Section */}
-      <Container className="d-flex my-5">
-        <Col className="me-5">
-          <SendUsMessage />
-        </Col>
-        <Col className="me-5">{/* Add an Image or Content here */}</Col>
-      </Container>
+      <div className="flex-col mx-auto max-w-6xl">
+        <SendUsMessage />
+      </div>
     </div>
   );
 }

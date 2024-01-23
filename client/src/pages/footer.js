@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import facebook from '../images/icon/facebook.png';
-import google from  '../images/icon/google.png';
-import linkedin from '../images/icon/linkedin.png';
+import facebook from "../images/icon/facebook.png";
+import google from "../images/icon/google.png";
+import linkedin from "../images/icon/linkedin.png";
 
 export default function Footer() {
   return (
@@ -29,29 +29,17 @@ export default function Footer() {
           </ul>
         </Container>
         <Container className="p-4 pb-0">
-          <section className="mb-4">
-            <a
-              className="m-1"
-              href="#!"
-              role="button"
-            >
-              <img classname='footerIcon' src={facebook} alt="Facebook" />
+          <section className="mb-4 d-flex justify-content-center">
+            <a className="m-1" href="#!" role="button">
+              <img classname="footerIcon" src={facebook} alt="Facebook" />
             </a>
 
-            <a
-              className="m-1"
-              href="#!"
-              role="button"
-            >
-              <img classname='footerIcon' src={google} alt="Google" styl/>
+            <a className="m-1" href="#!" role="button">
+              <img classname="footerIcon" src={google} alt="Google" styl />
             </a>
 
-            <a
-              className="m-1"
-              href="#!"
-              role="button"
-            >
-              <img  classname='footerIcon' src={linkedin} alt="LinkedIn"/>
+            <a className="m-1" href="#!" role="button">
+              <img classname="footerIcon" src={linkedin} alt="LinkedIn" />
             </a>
           </section>
         </Container>

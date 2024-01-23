@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { sendEmail } from "../APIfunctions/middleware";
 import { Button, Form, FormGroup, Input } from "reactstrap";
+import PhoneNumberButton from "./PhoneNumberButton";
 
-export default function SendUsMessage() {
+export default function SendUsMessage({ title, description }) {
   const [message, setMessage] = useState("");
   const [sendMessage, setSendMessage] = useState({
     firstName: "",
@@ -44,12 +45,16 @@ export default function SendUsMessage() {
       setMessage("Could not send Email");
     }
   };
+
   return (
-    <div>
+    <div className="flex w-full">
       <Form onSubmit={handleSubmit}>
         <FormGroup>
-          <h2 className="display-5">Get in touch</h2>
-          <p>we would love to here from you</p>
+          <h2 className="display-5">{title || "Get in touch"}</h2>
+          <p>
+            {description ||
+              "Unsure with your decision? Send as an email and we'll get back to you as soon as we can"}
+          </p>
           <Input
             className="me-5"
             placeholder="First Name"
@@ -100,14 +105,16 @@ export default function SendUsMessage() {
           />
         </FormGroup>
         {message && <div>{message}</div>}
-        <Button
-          type="submit"
-          className="rounded-pill"
-          color="primary"
-          size="lg"
-        >
-          Submit
-        </Button>
+        <div className="d-flex">
+          <div>
+            <button
+              type="submit"
+              className="bg-blue-500 text-white rounded-full py-2 px-4 text-lg hover:bg-blue-600"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
       </Form>
     </div>
   );

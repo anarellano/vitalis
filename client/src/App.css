@@ -9,17 +9,6 @@
 .smaller img {
   width: 17px;
 }
-.nav-logo {
-  width: 200px;
-  height: auto;
-}
-
-.navbar {
-  margin-bottom: 20px;
-
-  border-radius: 15px 50px 30px;
-  box-shadow: 6px 6px 24px 0 rgba(0, 0, 0, 0.08);
-}
 
 .bold {
   font-weight: bold !important;
@@ -74,7 +63,7 @@
 }
 .firstHeader {
   font-weight: bold !important;
-  font-size: 70px !important;
+  font-size: 60px !important;
 }
 
 .topheaderContainer {
@@ -140,8 +129,6 @@
   margin-top: 50px;
 }
 
-.threeReasonRowPadding {
-}
 /* // extra benefits // */
 
 .extraBenefits {
@@ -154,7 +141,6 @@
 .lastSection {
   border-radius: 15px 50px 30px;
   background: #aed2ea;
-  width: 200px;
   text-align: center;
   padding-bottom: 50px;
   padding-top: 80px;
@@ -261,7 +247,6 @@ html {
   height: "32px";
 }
 
-
 /* //////employee card */
 .card-container {
   width: 250px; /* or whatever you prefer */
@@ -276,7 +261,8 @@ html {
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;

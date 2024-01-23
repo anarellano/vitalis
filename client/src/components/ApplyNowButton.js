@@ -1,29 +1,13 @@
-import React from 'react';
-import { Button } from 'reactstrap'; // Replace 'your-library' with the library you're using, e.g., 'reactstrap'
-import { Link } from "react-router-dom";
+import React from "react";
 
 const ApplyNowButton = () => {
-    const linkStyle = {
-        width: '150px',
-        textAlign: 'center',
-        color: 'white',
-        textDecoration: 'none'
-    };
-
-    return (
-        <Button
-            color="primary"
-            size="lg"
-            className="rounded-pill bold"
-            as={Link}
-            style={{ backgroundColor: '#4681f4', borderColor: '#4681f4' }}
-        >
-            <a style={linkStyle} href="https://vitalisstaffing.clearcareonline.com/apply/">
-                Apply Now
-            </a>
-        </Button>
-    );
-}
+  return (
+    <a href="https://vitalisstaffing.clearcareonline.com/apply/">
+      <button class="ApplyBtn py-3 px-5 rounded-full me-3">
+        Apply For Work
+      </button>
+    </a>
+  );
+};
 
 export default ApplyNowButton;
-
