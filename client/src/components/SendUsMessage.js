@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { sendEmail } from "../APIfunctions/middleware";
-import { Button, Form, FormGroup, Input } from "reactstrap";
-import PhoneNumberButton from "./PhoneNumberButton";
+import { Form, FormGroup, Input } from "reactstrap";
 
 export default function SendUsMessage({ title, description }) {
   const [message, setMessage] = useState("");

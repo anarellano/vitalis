@@ -1,13 +1,11 @@
 import React from "react";
 import { Card, CardTitle, CardText, CardBody } from "reactstrap";
-import InfoCards from "../components/InfoCards";
 import PhoneNumberButton from "../components/PhoneNumberButton";
-import callMeStaffing from "../images/callMeStaffing.jpg";
 import SendUsMessage from "../components/SendUsMessage";
 
 function Staffing() {
   return (
-    <div>
+    <div className="flex-div mx-auto w-3/4 md:max-w-6xl">
       <div className="mx-auto max-w-6xl ">
         <div className="ms-5 text-start space-y-4">
           <h1 className="display-1">Join the Vitalis Family</h1>

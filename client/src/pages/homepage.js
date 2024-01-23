@@ -2,16 +2,11 @@ import React from "react";
 import { Card } from "react-bootstrap";
 
 import Faq from "../components/Faq.js";
-import BottomBox from "../components/BottomBox.js";
 import timetable from "../images/timetable.png";
 import money from "../images/money.png";
 import trophy from "../images/trophy.png";
-import medium from "../images/medium.png";
 import firstPicture from "../images/firstPicture.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import hiring from "../images/hiring.jpg";
-import PhoneNumberButton from "../components/PhoneNumberButton.js";
 import ApplyNowButton from "../components/ApplyNowButton.js";
 import HireStaffButton from "../components/HireStaffButton.js";
 import SendUsMessage from "../components/SendUsMessage.js";
@@ -59,7 +54,7 @@ function Homepage() {
   ];
 
   return (
-    <div className="flex-div mx-auto max-w-6xl">
+    <div className="flex-div mx-auto w-3/4 md:max-w-6xl">
       <div>
         {/* Section 1: Apply now button with contact */}
         <div className="firstdiv">
@@ -213,7 +208,7 @@ function Homepage() {
               {/* Step 3 */}
               <li className="text-3xl font-bold mb-1">Placement</li>
               <p className="text-lg">
-                Once approved, you'll be placed to your designated work
+                Once approved, you'll be placeds to your designated work
                 location.
               </p>
             </ol>

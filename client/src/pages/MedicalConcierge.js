@@ -1,8 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
 import PhoneNumberButton from "../components/PhoneNumberButton";
 import consultation from "../images/consultation.jpg";
-import providingCare from "../images/providingCare.jpg";
 
 import SendUsMessage from "../components/SendUsMessage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,7 +13,7 @@ import {
 
 function MedicalConcierge() {
   return (
-    <div>
+    <div className="flex-div mx-auto w-3/4 md:max-w-6xl">
       <div className="flex-col mx-auto max-w-6xl">
         <h1 className="display-3 mb-4">Medical Concierge </h1>
 
