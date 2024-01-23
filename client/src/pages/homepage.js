@@ -211,7 +211,7 @@ function Homepage() {
               </p>
 
               {/* Step 3 */}
-              <li className="text-3xl font-bold mb-1">Deployment</li>
+              <li className="text-3xl font-bold mb-1">Placement</li>
               <p className="text-lg">
                 Once approved, you'll be deployed to your designated work
                 location.
