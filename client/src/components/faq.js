@@ -1,37 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Accordion,
   AccordionBody,
   AccordionHeader,
   AccordionItem,
-} from 'reactstrap';
+} from "reactstrap";
 
 function Faq({ items }) {
-  const [open, setOpen] = useState('');
+  const [open, setOpen] = useState("");
 
   const toggle = (id) => {
-    if (open === id) {
-      setOpen(null);
-    } else {
-      setOpen(id);
-    }
+    setOpen(open === id ? null : id);
   };
 
   return (
-    <div>
-      <Accordion  open={open} toggle={toggle}>
-        {items.map(item => (
-          <AccordionItem key={item.id}>
-            <AccordionHeader >
-              {item.question}
-            </AccordionHeader>
-            <AccordionBody >
-              {item.answer}
-            </AccordionBody>
-          </AccordionItem>
-        ))}
-      </Accordion>
-    </div>
+    <Accordion open={open} toggle={toggle}>
+      {items.map((item) => (
+        <AccordionItem key={item.id}>
+          <AccordionHeader targetId={item.id}>{item.question}</AccordionHeader>
+          <AccordionBody accordionId={item.id}>{item.answer}</AccordionBody>
+        </AccordionItem>
+      ))}
+    </Accordion>
   );
 }
 

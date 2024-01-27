@@ -1,9 +1,7 @@
-# Vitalis
+- when On mobile view, when less than md, high header and make vitalis staffing header larger
 
-#### Video Demo: https://youtu.be/1FvWoSnGaII
+- learn the difference between margin paddingz
+  - Margin: Space outside element's border.
+  - Padding: Space inside element's border.
 
-#### Description:
-
-- Anton, quezon, Philippines
-- Nursing agency website draft that will be used to make the actual website.
-- there were sensitive info for sending emails, but I removed it to refrain from data leak
+how to show only on browser and not on

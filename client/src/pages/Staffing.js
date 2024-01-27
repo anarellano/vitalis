@@ -20,16 +20,6 @@ function Staffing() {
         </div>
       </div>
 
-      {/* <div className="my-5 mx-auto max-w-6xl ">
-        <h2 className="mb-3 display-6 ">The Best Nurses in the Industry</h2>
-        <p className="texl-xl">
-          Vitalis Staffing selectively recruits top nurses, ensuring a team of
-          passionate, well-trained professionals committed to clinical
-          excellence and compassionate care.
-        </p>
-      </div> */}
-
-      {/* Section 4: Values */}
       <div className="mt-5">
         <div className="text-center mt-5">
           <h2 className="display-5 mb-4">Core Values</h2>
@@ -40,7 +30,7 @@ function Staffing() {
         <div className="mx-auto max-w-6xl ">
           <div className="d-flex justify-content-around">
             <Card
-              className="my-2 values"
+              className="my-2 values p-4"
               divor="light"
               outline
               style={{

@@ -58,14 +58,13 @@ function Homepage() {
       <div>
         {/* Section 1: Apply now button with contact */}
         <div className="firstdiv">
-          {/* <div sm={8}> */}
-          <h1 className="mb-1 firstHeader">
+          {/* <h1 className="mb-1 firstHeader hidden md:block">
             Your Schedule, Your Income, Your Journey
           </h1>
-          <h4 className="mb-3 text-warp">
+          <h4 className="mb-3 text-warp hidden md:block">
             At Vitalis Staffing, We Support Our Nurses with Competitive Pay,
             Flexible Schedules, and Opportunities that Enrich Life and Career"
-          </h4>
+          </h4> */}
           <div className="d-flex ">
             <div>
               <ApplyNowButton />
@@ -80,15 +79,15 @@ function Homepage() {
       {/* Section 2: Cater to Audience/nurse beneifits */}
       <div className=" my-5">
         <div className="flex flex-wrap my-5">
-          <div className="w-full md:w-1/2 pe-5">
+          <div className="w-full md:w-1/2 ">
             <img
               src={firstPicture}
               alt="Description"
-              className="rounded-2xl w-full h-full"
+              className="rounded-2xl object-cover w-full h-full"
             />
           </div>
-          <div className="w-full md:w-1/2 pe-5">
-            <Card.Body className="threeReasondiv">
+          <div className="w-full md:w-1/2 p-4">
+            <Card.Body>
               <Card.Title>
                 <img src={timetable} alt="timetable" />
                 Flexible Hours
@@ -110,14 +109,18 @@ function Homepage() {
               </Card.Text>
             </Card.Body>
 
-            <Card.Body className="threeReasondiv">
+            <Card.Body className="">
               <Card.Title>
-                <img src={trophy} alt="throphy" />
-                Opportunity to Gdiv
+                <img
+                  src={trophy}
+                  alt="Trophy icon"
+                  className="object-contain h-full"
+                />
+                Opportunity to Grow
               </Card.Title>
               <Card.Text>
-                "Give your nursing career with us through continuous learning
-                and advancement opportunities."
+                Give your nursing career a boost with us through continuous
+                learning and advancement opportunities.
               </Card.Text>
             </Card.Body>
           </div>
@@ -239,15 +242,14 @@ function Homepage() {
         </div>
       </div>
 
+      <div className="pl-2 justify-center h-full ">
+        <Faq items={questionsAndAnswers} />
+      </div>
+
       {/* section 6: FAQ with number and email again one the right side */}
       <div className="my-5">
-        <div className="d-flex">
-          <div className="pr-2">
-            <SendUsMessage />
-          </div>
-          <div className="pl-2 justify-center h-full ">
-            <Faq items={questionsAndAnswers} />
-          </div>
+        <div className="pr-2">
+          <SendUsMessage />
         </div>
       </div>
     </div>

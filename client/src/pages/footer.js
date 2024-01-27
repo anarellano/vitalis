@@ -31,15 +31,15 @@ export default function Footer() {
         <Container className="p-4 pb-0">
           <section className="mb-4 d-flex justify-content-center">
             <a className="m-1" href="#!" role="button">
-              <img classname="footerIcon" src={facebook} alt="Facebook" />
+              <img className="footerIcon" src={facebook} alt="Facebook" />
             </a>
 
             <a className="m-1" href="#!" role="button">
-              <img classname="footerIcon" src={google} alt="Google" styl />
+              <img className="footerIcon" src={google} alt="Google" />
             </a>
 
             <a className="m-1" href="#!" role="button">
-              <img classname="footerIcon" src={linkedin} alt="LinkedIn" />
+              <img className="footerIcon" src={linkedin} alt="LinkedIn" />
             </a>
           </section>
         </Container>

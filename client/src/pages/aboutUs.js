@@ -20,14 +20,23 @@ export default function AboutUs() {
           </h5>
         </div>
       </div>
-      <div className="">
+      <div>
         <div>
-          <h3 className="display-6">How We Help</h3>
-          <h5>
-            Vitalis Staffing offers flexible scheduling and higher pay for
-            healthcare professionals, ensuring job satisfaction and quality
-            patient care
-          </h5>
+          <h3 className="display-6 p-2">How We Help</h3>
+          <ul className="text-xl list-disc list-inside">
+            <li>
+              <strong>Flexible Scheduling:</strong> Enhanced work-life balance
+              with adjustable schedules.
+            </li>
+            <li>
+              <strong>Competitive Compensation:</strong> Fair and higher pay for
+              healthcare professionals.
+            </li>
+            <li>
+              <strong>Quality Patient Care:</strong> Improved care outcomes
+              through staff well-being.
+            </li>
+          </ul>
         </div>
       </div>
 
