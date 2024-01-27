@@ -55,14 +55,14 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="my-5 ">
+      <div className="my-5">
         <div className="lastSection">
           <div>
-            <h1 className=" display-4 d-flex justify-content-center mb-5">
+            <h1 className=" display-4 d-flex justify-content-center pb-3">
               Interested in Partnering Vitalis?
             </h1>
           </div>
-          <div className="d-flex justify-content-center ">
+          <div className="d-flex justify-content-center">
             <div>
               <ApplyNowButton />
             </div>

@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Homepage from "./pages/Homepage";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./pages/Footer";
@@ -20,7 +19,6 @@ const websiteRoutes = [
   { path: "/FreeEducation", component: FreeEducation },
   { path: "/MedicalConcierge", component: MedicalConcierge },
   { path: "/Contact", component: Contact },
-  { path: "/Home", component: Home },
 ];
 
 function App() {
