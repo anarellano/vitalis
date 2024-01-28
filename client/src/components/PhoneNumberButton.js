@@ -1,28 +1,17 @@
-import React from 'react';
-import { Button } from 'reactstrap';
-import { Link } from "react-router-dom";
+import React from "react";
 
-const PhoneNumberButton = () => {
-    const buttonStyle = {
-        width: '150px',
-        textAlign: 'center',
-        color: 'black', // Font color set to black
-        textDecoration: 'none',
-        fontWeight: 'bold' // Font set to bold
-    };
-
-    return (
-        <Button
-            style={{ backgroundColor: '#33b249', borderColor: '#33b249' }} // Vibrant green color
-            size="lg"
-            className="rounded-pill bold"
-            as={Link}
-        >
-            <a style={buttonStyle} href="tel:+1-415-812-4343">
-                (415) 812-4343
-            </a>
-        </Button>
-    );
-}
+const PhoneNumberButton = ({ customClass }) => {
+  return (
+    <a
+      href="tel:+1-415-812-4343"
+      className={
+        customClass ||
+        "inline-block bg-green-400 border-green-400 text-white font-bold py-3 px-5 rounded-full text-lg hover:bg-green-700"
+      }
+    >
+      Call Now
+    </a>
+  );
+};
 
 export default PhoneNumberButton;

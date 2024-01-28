@@ -1,42 +1,38 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Homepage from "./pages/Homepage";
-import Header from "./pages/Header";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
 import Footer from "./pages/Footer";
 import AboutUs from "./pages/AboutUs";
-import Jobs from "./pages/Jobs";
+import Careers from "./pages/Careers";
 import Staffing from "./pages/Staffing";
-import ApplyNow from "./pages/applyNow";
-import CNA from "./pages/cna";
-import RN from "./pages/rn";
-import LVN from "./pages/lvn";
-import NurseTalent from "./pages/nurseTalent";
 import FreeEducation from "./pages/freeEducation";
 import MedicalConcierge from "./pages/MedicalConcierge";
-//
+import Contact from "./pages/Contact";
+
 const websiteRoutes = [
-  { path: "/", component: Homepage },
+  { path: "/", component: Home },
   { path: "/aboutUs", component: AboutUs },
-  { path: "/jobs", component: Jobs },
+  { path: "/Careers", component: Careers },
   { path: "/Staffing", component: Staffing },
-  { path: "/applyNow", component: ApplyNow },
-  { path: "/CNA", component: CNA },
-  { path: "/LVN", component: LVN },
-  { path: "/NurseTalent", component: NurseTalent },
-  { path: "/RN", component: RN },
   { path: "/FreeEducation", component: FreeEducation },
   { path: "/MedicalConcierge", component: MedicalConcierge },
+  { path: "/Contact", component: Contact },
 ];
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Navbar />
         <Routes className="Routes">
           {websiteRoutes.map((route) => (
-            <Route key={route.path} path={route.path} element={<route.component />} />
+            <Route
+              key={route.path}
+              path={route.path}
+              element={<route.component />}
+            />
           ))}
         </Routes>
         <Footer />

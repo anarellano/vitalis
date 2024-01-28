@@ -24,6 +24,7 @@
     "react-stickynode": "^4.1.0",
     "reactstrap": "^9.2.0",
     "sass": "^1.66.1",
+    "tailwindcss": "^1.9.6",
     "web-vitals": "^2.1.4",
     "yup": "^1.2.0"
   },
