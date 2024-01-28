@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../images/3.png"; // Replace path_to_logo with the correct path
 
 // import ApplyNow from "/Users/antonarellano/Vitalis/client/src/pages/applyNow.js"; // Replace path_to_ApplyNow with the correct path
@@ -6,13 +7,13 @@ import logo from "../images/3.png"; // Replace path_to_logo with the correct pat
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const websiteRoutes = [
-    { path: "/", component: "Home" },
-    { path: "/About", component: "About" },
-    { path: "/Careers", component: "Careers" },
-    { path: "/Staffing", component: "Staffing" },
-    { path: "/MedicalConcierge", component: "Medical Concierge" },
-    { path: "/Contact", component: "Contact" },
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/About" },
+    { name: "Careers", path: "/Careers" },
+    { name: "Staffing", path: "/Staffing" },
+    { name: "Medical Concierge", path: "/MedicalConcierge" },
+    { name: "Contact Us", path: "/Contact" },
   ];
 
   return (
@@ -63,15 +64,15 @@ export default function Header() {
             </div>
             <div>
               <ul className="font-medium items-center w-full flex flex-col md:flex-row md:items-center">
-                {websiteRoutes.map((page) => (
-                  <li key={page.path}>
-                    <a
-                      href={page.path}
-                      className=" text-2xl md:justify-center md:items-center block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                      aria-current="page"
+                {navLinks.map((link) => (
+                  <li key={link.name} className="md:mr-8">
+                    <Link
+                      to={link.path}
+                      className="text-2xl block py-2 px-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                      onClick={() => setIsOpen(false)}
                     >
-                      {page.component}
-                    </a>
+                      {link.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
