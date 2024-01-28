@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./pages/Footer";
-import AboutUs from "./pages/AboutUs";
+import About from "./pages/About";
 import Careers from "./pages/Careers";
 import Staffing from "./pages/Staffing";
 import FreeEducation from "./pages/freeEducation";
@@ -13,7 +13,7 @@ import Contact from "./pages/Contact";
 
 const websiteRoutes = [
   { path: "/", component: Home },
-  { path: "/aboutUs", component: AboutUs },
+  { path: "/About", component: About },
   { path: "/Careers", component: Careers },
   { path: "/Staffing", component: Staffing },
   { path: "/FreeEducation", component: FreeEducation },
