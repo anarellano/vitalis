@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hireStaffBtn {
+  outline: 3px solid #4681f4;
+  color: #4681f4; /* Set the font color */
+  font-weight: bold;
+}
+.ApplyBtn {
+  color: white;
+  font-weight: bold;
+  background-color: #4681f4;
+}
+.ApplyBtn:hover {
+  background-color: #6a9df7; /* Lighter blue on hover */
+  /* The font color remains unchanged */
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+/* Add this class in your global CSS file */
+.min-h-80vh {
+  min-height: 80vh;
+}
