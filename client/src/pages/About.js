@@ -6,7 +6,7 @@ import justine from "../images/justine.jpg";
 import raquel from "../images/raquel.jpg";
 import HireStaffButton from "../components/HireStaffButton.js";
 
-export default function AboutUs() {
+export default function About() {
   return (
     <div className="flex-div mx-auto w-3/4 md:max-w-6xl">
       <div className="mb-5">

@@ -7,7 +7,7 @@ import vacation from "../images/vacation.jpg";
 import SendUsMessage from "../components/SendUsMessage.js";
 import hiring from "../images/hiring.jpg";
 
-function Jobs() {
+function Careers() {
   return (
     <div className="flex-div mx-auto w-3/4 md:max-w-6xl">
       {/* Section 1: Hook; real them in */}
@@ -203,4 +203,4 @@ function Jobs() {
   );
 }
 
-export default Jobs;
+export default Careers;

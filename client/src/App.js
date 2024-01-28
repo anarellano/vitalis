@@ -3,11 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import Footer from "./pages/Footer";
+import Footer from "./components/Footer";
 import About from "./pages/About";
 import Careers from "./pages/Careers";
 import Staffing from "./pages/Staffing";
-import FreeEducation from "./pages/freeEducation";
 import MedicalConcierge from "./pages/MedicalConcierge";
 import Contact from "./pages/Contact";
 
@@ -16,7 +15,6 @@ const websiteRoutes = [
   { path: "/About", component: About },
   { path: "/Careers", component: Careers },
   { path: "/Staffing", component: Staffing },
-  { path: "/FreeEducation", component: FreeEducation },
   { path: "/MedicalConcierge", component: MedicalConcierge },
   { path: "/Contact", component: Contact },
 ];
